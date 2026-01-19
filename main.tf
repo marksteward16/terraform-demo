@@ -14,13 +14,13 @@ provider "aws" {
 
 # add 3 IAM users with admin permissions
 resource "aws_iam_user" "user1" {
-  name = var.user_names[0]
+  name = "markymark123"
 }
 
 resource "aws_iam_user" "user2" {
-  name = var.user_names[1]
+  name = "markymark456"
 }
 
 resource "aws_iam_user" "user3" {
-  name = var.user_names[2]
+  name = "markymark789"
 }
