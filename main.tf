@@ -24,3 +24,7 @@ resource "aws_iam_user" "user2" {
 resource "aws_iam_user" "user3" {
   name = "markymark789"
 }
+
+resource "aws_iam_user" "user4" {
+  name = "markymark101112"
+}
