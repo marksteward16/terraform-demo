@@ -14,17 +14,6 @@ provider "aws" {
 
 # add 3 IAM users with admin permissions
 resource "aws_iam_user" "user1" {
-  name = "markymark123"
-}
-
-resource "aws_iam_user" "user2" {
-  name = "markymark456"
-}
-
-resource "aws_iam_user" "user3" {
-  name = "markymark789"
-}
-
-resource "aws_iam_user" "user4" {
-  name = "markymark101112"
+  count = length(var.user_names)
+  name  = var.user_names[count.index]
 }
